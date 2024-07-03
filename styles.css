@@ -1,0 +1,91 @@
+body {
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
+    Noto Sans, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-size: 100px;
+}
+html {
+    font-size: 100px;
+}
+.news {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/news-bg-5e0dc97a.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-size: cover;
+}
+
+.video-bg {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  mix-blend-mode: screen;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.bg-circles {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+
+.bg-circles .circle:nth-child(2) {
+  left: 45%;
+  top: 7%;
+  width: 15.42rem;
+  height: 15.42rem;
+  -webkit-animation: circle-play-f36cfd63 40s forwards linear infinite;
+  animation: circle-play-f36cfd63 40s forwards linear infinite;
+}
+
+@keyframes circle-play-f36cfd63 {
+    0% {
+    opacity: 0;
+    mask-position: 0% 0%;
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
+}
+2%, 98% {
+    opacity: .35;
+}
+100% {
+    opacity: 0;
+    mask-position: -80% -80%;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+}
+/*.bg-circles.isFireFox .circle {
+  -webkit-animation: none;
+  animation: none;
+}
+*/
+.bg-circles .circle {
+  position: absolute;
+  left: 15%;
+  top: 5%;
+  width: 23.2rem;
+  height: 23.2rem;
+  border-radius: 50%;
+  border: .03rem solid #5f5642;
+  mask-image: url(assets/mask-e8f295ca.png);
+  -webkit-animation: circle-play-f36cfd63 40s forwards linear infinite;
+  animation: circle-play-f36cfd63 40s forwards linear infinite;
+  -webkit-mask-position: 100% 100%;
+  mask-position: 100% 100%;
+}

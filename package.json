@@ -1,0 +1,16 @@
+{
+  "name": "electron-wuthering-waves",
+  "version": "1.0.0",
+  "description": "hy",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "frog",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-prebuilt-compile": "31.1.0"
+  },
+  "dependencies": {}
+}
